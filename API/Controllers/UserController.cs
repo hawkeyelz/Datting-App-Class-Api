@@ -1,9 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using API.Data;
 using API.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -11,8 +8,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
-    [Controller]
-    [Route("api/[Controller]")]
     public class UsersController : BaseApiController
     {
         private readonly DataContext _context;
